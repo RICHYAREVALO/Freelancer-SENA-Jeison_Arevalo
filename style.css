@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* style del header*/
+
+header {
+  width: 100%;
+  height: 104px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #2c3e50;
+}
+
+.container__header {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+header .logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo a {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.container__nav {
+  position: relative;
+  height: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0px 1px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+nav ul li a h3:hover {
+  color: #1abc9c;
+}
+
+.select {
+  background: #2c3e50;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/*style del "inicio"*/
+
+#inicio {
+  background-color: #1abc9c;
+  height: 700px;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#inicio img {
+  margin-top: 100px;
+}
+
+#inicio h1 {
+  color: #fff;
+  margin: auto;
+  padding-top: 40px;
+  font-size: 65px;
+  font-family: sans-serif;
+}
+#inicio h3 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 23px;
+  margin-top: 2%;
+}
+
+#inicio img {
+  margin: auto;
+}
+
+.imagenes__titulos ul li {
+  list-style: none;
+  color: #fff;
+  font-family: sans-serif;
+  margin: auto;
+  width: 100%;
+}
+
+/*style del portafolio*/
+
+.contenedor-portafolio {
+  padding: 100px;
+}
+
+.titulo-portafolio {
+  color: #2c3e50;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: auto;
+  font-family: sans-serif;
+}
+
+.imagen-portafolio-start {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+#portafolio {
+  background: #fff;
+  text-align: center;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port {
+  width: 30%;
+  margin-bottom: 60px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(r0, g0, b0, 5);
+}
+
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5%;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(17, 155, 127, 0.568);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5%;
+}
+
+.hover-galeria img {
+  width: 40px;
+}
+
+.hover-galeria p {
+  color: #fff;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+/*style del acerca de*/
+#contenedor_sobre-nosotos {
+  background-color: #1abc9c;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  padding-top: 5%;
+}
+.contenedor-sobre-nosoros {
+  display: flex;
+  background-color: #1abc9c;
+  padding: 10px 200px 10px 400px;
+}
+
+.titulo-sobre-nosotros {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: auto;
+  font-family: sans-serif;
+}
+
+.imagen-sobre-nosotors {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.contenido-textos {
+  max-width: 330px;
+}
+.contenido-textos h3 {
+  margin-bottom: 15px;
+}
+
+.contenido-textos p {
+  padding-right: 4px;
+  text-align: left;
+  color: #fff;
+  font-family: sans-serif;
+  width: 100%;
+  line-height: 25px;
+  font-weight: 550;
+}
+
+.button-about {
+  margin: 2%;
+  font-size: 20px;
+  background-color: #1abc9c;
+  padding: 15px 60px;
+  border-radius: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.button-about:hover {
+  background-color: #fff;
+  color: black;
+}
+/*style del contacto*/
+
+#contacto {
+  background-color: #fff;
+  height: 560px;
+  text-align: center;
+  margin: 5%;
+}
+
+.titulo-contacto {
+  color: #2c3e50;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: auto;
+  font-family: sans-serif;
+}
+
+.imagen-contacto {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+
+.contenedor-contacto {
+  margin: 2%;
+}
+
+#in {
+  color: #253442;
+  padding-top: 2%;
+  width: 50%;
+  border: solid #fff;
+  border-bottom: solid #2c3e50;
+}
+
+#in:hover {
+  color: #253442;
+  padding-top: 2%;
+  width: 50%;
+  border: solid #fff;
+  border-bottom: solid #17a387;
+}
+
+#bu {
+  padding: 1% 3% 1% 3%;
+  background-color: #17a38717;
+  border-radius: 9%;
+}
+
+#bu:hover {
+  padding: 1% 3% 1% 3%;
+  background-color: #2c3e50;
+  border-radius: 9%;
+  color: #17a387;
+  border: solid #17a387;
+}
+/*  style del footer  */
+
+footer {
+  background: #2c3e50;
+  padding-top: 6%;
+  overflow: hidden;
+  height: 250px;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.content-foot {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.content-foot h4 {
+  color: #fff;
+  border-bottom: 3p solid #af20de;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foot p a {
+  color: #1abc9c;
+}
+
+.content-foot p a:hover {
+  color: #17a387;
+}
+
+.content-foot a i {
+  padding: 3%;
+  color: #fff;
+  border: solid #fff;
+  border-radius: 50%;
+}
+
+.content-foot a i:hover {
+  background-color: #fff;
+  padding: 3%;
+  color: #2c3e50;
+  border: solid #fff;
+  border-radius: 50%;
+}
+
+/*copi*/
+.copi {
+  background: #253442;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 80px;
+}
+
+.contenedor-copi {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.content-copi {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.content-foot h4 {
+  color: #fff;
+  border-bottom: 3p solid #af20de;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
